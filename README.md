@@ -1,13 +1,17 @@
 # Super Autopilot
 
-An AI agent skill that helps you go from a development request to a verified result. It plans the work, follows the plan, and checks and fixes issues along the way.
+**The lazy workflow for developers: give your AI agent a task once and let it take care of the rest.**
+
+Super Autopilot helps your agent turn a request into a verified result. It plans the work, follows the plan, checks the outcome, fixes problems, and repeats the checks until the required work is verified or it hits a genuine blocker.
 
 ## Why use it?
 
-- **One starting point:** Give your agent a task and let it work through the full plan.
-- **Less back-and-forth:** It asks only when a decision or permission is genuinely needed.
-- **Verification built in:** It checks the result, investigates failures, and repeats affected checks after fixes.
-- **Honest results:** It reports what was verified and identifies blockers instead of claiming unfinished work is done.
+- **One request, less micromanagement:** Describe the outcome and let your agent work through the plan without routine check-ins.
+- **A built-in feedback loop:** Plan → build → check → fix → check again. Failed checks lead to investigation and another pass, not a premature finish.
+- **Progress that stays on track:** The agent records progress, revisits unfinished tasks, and checks the result against your original request.
+- **A useful final report:** See what changed, what was verified, and any blockers or checks that could not be completed.
+
+You stay involved when an essential decision, permission, or a blocker requires your input. The goal is less busywork—not skipping verification or pretending every task can run without limits.
 
 ## Install
 
@@ -33,7 +37,7 @@ Invoke `super-autopilot` in your agent and describe the task. In Zed, attach `@s
 
 > Use super-autopilot to add an export button to the settings page. Keep the existing layout, add tests, and do not deploy.
 
-Super Autopilot will inspect the project, make or resume a plan, implement the tasks, verify the result, and report what happened. The verification loop is included; you do not need to install `iterate-until-verified` separately.
+Super Autopilot will inspect the project, make or resume a plan, implement the tasks, verify the result, and report what happened. Its built-in loop checks the work, fixes issues, and verifies the changes again.
 
 It is designed to keep working without routine approval pauses. It will still need your input for essential decisions, required permissions, or blockers it cannot safely resolve.
 
